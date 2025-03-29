@@ -1,5 +1,5 @@
-./.venv
-./__pycache__ 
+.venv
+__pycache__ 
 
 
-./account.json # secret
+account.json
