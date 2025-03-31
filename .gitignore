@@ -1,3 +1,6 @@
+# Ignore Google Cloud credentials file
+backend/weatherapp-455117-2c3525ada720.json
+
 .DS_STORE
 node_modules
 scripts/flow/*/.flowconfig

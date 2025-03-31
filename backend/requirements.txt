@@ -1,2 +1,5 @@
 fastapi
 uvicorn
+
+# pip install google-cloud-storage
+# set GOOGLE_APPLICATION_CREDENTIALS="C:\Users\maria.onofrei\Documents\github\on-premise-app\backend\weatherapp-455117-2c3525ada720.json"
