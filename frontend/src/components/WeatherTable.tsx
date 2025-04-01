@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react"
 import client from "../api/client"
 import "./WeatherTable.css"
-import WeatherTableByDay from "./WeatherTableByDay"
 
 interface WeatherData {
   city: string
@@ -10,18 +9,17 @@ interface WeatherData {
   precipitation?: number
 }
 
-const WeatherTable = () => {
+const WeatherTable: React.FC<{ city: string }> = ({ city }) => {
   const [data, setData] = useState<WeatherData[]>([])
 
   useEffect(() => {
     client
-      .get("/weather?city=Iași")
+      .get(`/weather?city=${encodeURIComponent(city)}`)
       .then((res) => setData(res.data))
       .catch((err) => console.error("API error:", err))
-  }, [])
+  }, [city])
 
   return (
-    <>
     <div className="weather-container">
       <div className="weather-scroll">
         {data.map((entry, index) => {
@@ -42,8 +40,6 @@ const WeatherTable = () => {
         })}
       </div>
     </div>
-    <WeatherTableByDay />
-    </>
   )
 }
 
