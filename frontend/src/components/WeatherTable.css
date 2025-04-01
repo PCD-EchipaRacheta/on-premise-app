@@ -4,9 +4,9 @@
   padding: 1rem;
   box-sizing: border-box;
 
-  border: 1px solid #ccc;       /* Soft gray border */
-  border-radius: 12px;          /* Rounded corners */
-  background-color: transparent; /* No background color */
+  border: 1px solid #ccc;       
+  border-radius: 12px;          
+  background-color: transparent;
 
   max-width: 100%;
   white-space: nowrap;

@@ -41,7 +41,7 @@ Create a virtual env
 Activate the env
 
 ```bash
-  source venv/bin/activate 
+  venv\Scripts\activate
 ```
 
 Install dependencies
